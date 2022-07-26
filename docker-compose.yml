@@ -8,11 +8,11 @@ services:
     restart: on-failure
     build: ./web1
     ports:
-      - '81:5000'
+      - '81:3000'
   nginx:
     image: 'nginx'
     ports:
-    - '82:80'
+    - '83:80'
     depends_on:
     - web1
     
